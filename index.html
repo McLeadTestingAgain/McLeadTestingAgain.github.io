@@ -1,0 +1,261 @@
+
+
+<DOCTYPE html!>
+<!--Created by Jason McLead on July 28th 2015-->
+<html>
+<head>
+<title>
+Introduction to CSS
+</title>
+
+<style type="text/CSS">
+
+body
+{
+margin: 0px;
+background-color: #CADAE0;
+background-image: url("http://www.googledrive.com/host/0ByceWKKkA7-KSUhUZEhEdUxJRTg");
+background-width: 100%;
+background-height: 150%;
+background-attachment: fixed;
+color: white;
+}
+
+h3
+{
+text-align: center;
+text-decoration: underline;
+text-shadow: 1px 2px #000000;
+font-size: 35px;
+color: #C1D536;
+}
+
+hr
+{
+width: 95%; 
+size: 15px;
+color: #7E3D2D;
+}
+
+a
+{
+font-weight: bold;
+font-size: 25px;
+}
+
+a:hover
+{
+color: orange;
+}
+
+
+#standards
+{
+background-image: url("http://www.googledrive.com/host/0ByceWKKkA7-KTTdHQjJOd3ZCUE0");
+background-size: 100%; 
+background-repeat: no-repeat;
+padding-top: 20px;
+padding: 10px;
+color: white;
+text-shadow: 2px 2px black;
+width: 100%;
+background-color: #85ADAC;
+text-align: center;
+font-family: 'Franklin Gothic', sans-serif;
+margin: 0px;
+}
+
+#lesson
+{
+margin-top: 0px;
+padding: 15px; 
+font-family: 'Baskerville', serif;
+font-size: 20px;
+}
+
+</style>
+</head>
+
+<body>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<!--This is the divisions for the PA Standards-->
+<div id="standards">
+<h1>
+~ Introduction to CSS ~
+</h1>
+<br>
+<h2>
+15.4.12.G. Create an advanced digital project using sophisticated design and appropriate software/applications. <br>
+<br>
+15.4.12.H.
+Use programming languages to develop
+logical thinking and problem solving skills.  
+<br>
+<br>
+Essential Question: How is CSS used to create within a HTML document?
+<br>
+<br>
+Objective: Students will be able to embed a CSS (cascading style sheet) into a HTML document.
+</h2>
+<hr>
+</div>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<!--This is the divisions for the body of the lesson-->
+<div id="lesson">
+<p>
+For today's lesson we will begin to take a look at CSS.  CSS stands for <strong><u>C</strong></u>ascading <strong><u>S</strong></u>tyle <strong><u>S</strong></u>heet.  CSS was developed 
+to give web designers greater control over the design of a webpage.  In today's less you will take a html document and edit that html document by using CSS.  However
+before we begin we will need a few things.<br>
+<h3>
+Getting Started
+</h3>
+<ul>
+<li>Please open today's HTML file on your computer: <a href="http://www.googledrive.com/host/0ByceWKKkA7-KdTNkUVNZNjAzekU" target="_blank"> Today's HTML File</a></li>
+<li>Please open our online text editor: <a href="http://htmledit.squarefree.com/" target="_blank">htmledit.squarefree.com</a></li>
+<li>To save your work you will need a clean text editor so on your computer please open Notepad or Notepad++</li>
+<li>While you are waiting for the class please look at today's entrance question.</li>
+</ul>
+<iframe src="bellringer.html" width="98%"  height="400px" style="margin-left: 10px;"></iframe>
+
+<h3>
+Starting a Cascading Style Sheet
+</h3>
+<p>
+There are a few ways to apply CSS within an HTML document.  You can create the CSS on a separate file and then link in the CSS into the html document.  You can place the CSS directly into a HTML tag.  However, for today's lesson we are going to create your CSS by embedding our CSS into the head of our HTML document.  Under our title tags within our HTML document we will begin our CSS by typing an opening style tag:
+</p>
+<blockquote>
+<span style="font-weight: bold; color: red;">
+&#60; style type = "text/CSS"&#62;
+</span>
+</blockquote>
+<p>
+Our CSS also needs to be closed.  In order to close our CSS we need to use a closing style tag: 
+</p>
+<blockquote>
+<span style="font-weight: bold; color: red;">
+&#60; /style &#62;
+</span>
+</blockquote>
+
+
+<h3>
+CSS Syntax
+</h3>
+<p>
+Between our opening and closing style tags we will type our CSS.  CSS looks differently than HTML, for it does not rely on the use of tags.  Rather CSS has its own syntax; which will look similar to those of us who are familiar with C++ or Java.  CSS consists of rules which tell the web-browser how and what to do with the CSS.  The rules of CSS consist of three parts.  The parts are: 
+<ul>
+<li><u><strong>Selector</u></strong> - tells the web browser where to apply the rule.</li>
+<li><u><strong>Property</u></strong> - tells the web browser what attribute of the html tag will be controlled by the rule.</li>
+<li><u><strong>Value</u></strong> - assigns a value to the property within the rule.</li>
+</ul>
+</p>
+For instance in the code below all of the text h3 (header size 3) tags will be changed to blue.<br>
+<img src="http://www.googledrive.com/host/0ByceWKKkA7-Kc292OHQyelgwaGs" alt="Image showing selector, property, and value in CSS" style="border: 5px #645977 solid; "></img> 
+<p>
+The selector is followed by an opening curly brace { within the opening curly brace and the closing curly brace } the rules to apply to the selector are listed.  These rules collectively are known as the <u><strong>
+rule set</u></strong>.  Some things to keep in mind about the syntax of CSS: 
+<ul>
+<li>Each rule has at a property and at least one value.</li>
+<li>Each property and value(s) within the rule is separated by a colon :</li>
+<li>Individual rules are separated by each other by a semi-colon ; </li>
+<li>If a property or value has more than one word in its name, than it is hyphenated for instance below for font-weight the name is hyphenated, for instance.</li>
+<blockquote>
+<span style="font-weight: bold; color: red;">
+h2<br>
+{<br>
+font-weight: bold;<br>
+}<br>
+</blockquote>
+</span>
+<li>You can have more than one selector for rule  set, just separate the selectors with a comma, for instance. </li>
+<blockquote>
+<span style="font-weight: bold; color: red;">
+h1, h3<br>
+{<br>
+color: red; <br>
+}
+</blockquote>
+
+<video width="600" height="450" controls>
+  <source src="http://www.googledrive.com/host/0ByceWKKkA7-KbDdITnRYNjlCQ2c" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<br>
+<br>
+<a href="CSSIntro.mp4">Link to today's lesson video</a>
+<br>
+<br>
+
+<hr width="95%" size="5px">
+
+<!------------------------------------------------------------------------------------------------------------------------------------->
+<!--Beginning of directions for the lesson.-->
+<h3>
+Directions for Today's Assignment
+</h3>
+<p>
+For today's lesson I want you to:
+<ol>
+<li>Open today's HTML file. <a href="http://www.googledrive.com/host/0ByceWKKkA7-KdTNkUVNZNjAzekU" target="_blank"> Today's HTML File</a></li>
+<li>In another tab open the website <a href="http://htmledit.squarefree.com/" target="_blank">htmledit.squarefree.com.</a></li>
+<li>Once today's HTML file is open on your web-browser press control and U; (ctrl + U) to view the source code.</li>
+<li>Once the window opens with the HTML file's source code, copy and paste the source code from today's HTML file into the top of htmledit.squarefree.com. 
+<ul>
+<li>Select all is ctrl + A</li>
+<li>Copy is ctrl + C</li>
+<li>Paste is ctrl + P</li>
+</ul>
+<li>It would also help to have a reference for CSS, this site should help: <a href="http://www.w3schools.com/cssref/default.asp" target="_blank">W3 CSS Reference</a> within another tab on your browser.</li>
+<li>Create an embedded cascading style sheet under the title tags within the head of the html file.</li>
+<li>Create a rule set within the cascading sheet to govern the <strong>body</strong> of the document.  Within that rule set I want you to: </li>
+<ul>
+<li>Align the text into the center of the page with: <span style="font-weight: bold; color: red;">text-align: center;</span> </li>
+<li>Assign a background color for the page: <span style="font-weight: bold; color: red;">background-color: </span>"your choice" <span style="font-weight: bold; color: red;">;</span></li>
+</ul>
+<li>Create a rule set within the cascading sheet to govern the <strong>h1 (HTML header size 1)</strong> tags of the document.  Within that rule set I want you to: </li>
+<ul>
+<li>Underline the title of the song <span style="font-weight: bold; color: red;">text-decoration: underline;</span> </li>
+<li>Assign text color for <span style="font-weight: bold; color: red;">color: </span>"your choice of red white or blue" <span style="font-weight: bold; color: red;">;</span></li>
+</ul>
+<li>Create a rule set within the cascading sheet to govern the <strong>h2 and h3  (HTML header size 2 and 3)</strong> tags of the document.  Within that rule set I want you to: </li>
+<ul>
+<li>Underline the name of the author and when the song was written: <span style="font-weight: bold; color: red;">text-decoration: underline;</span> </li>
+<li>Assign text color for <span style="font-weight: bold; color: red;">color: </span>"your choice of red white or blue" <span style="font-weight: bold; color: red;">;</span></li>
+</ul>
+<li>Create a rule set within the cascading sheet to govern the <strong>p (paragraph)</strong> tags of the document.  Within that rule set I want you to: </li>
+<ul>
+<li>Increase the font size of the text: <span style="font-weight: bold; color: red;">font-size: </span> "set the size in pixels" <span style="font-weight: bold; color: red;"> ; </span></li>
+<li>Assign text color for <span style="font-weight: bold; color: red;">color: </span>"your choice of red white or blue" <span style="font-weight: bold; color: red;">;</span></li>
+</ul>
+<li>Go to <a href="http://www.w3schools.com/cssref/default.asp" target="_blank">W3 CSS Reference</a> and pick out <strong>two more</strong> CSS properties to apply.  Some suggestions worth checking out are:</li>
+<ul>
+<li><span style="font-weight: bold; color: red;">text-shadow</span></li>
+<li><span style="font-weight: bold; color: red;">text-transform</span></li>
+<li><span style="font-weight: bold; color: red;">font-weight</span></li>
+<li><span style="font-weight: bold; color: red;">font-family</span></li>
+</uL>
+<li><strong>Hand in your edited HTML file for grading.</strong></li>
+</ol>
+<br>
+<div style="text-align: center; text-decoration: underline; font-size: 30px;">
+Remember to make it awesome!<br>
+
+<br>
+<img src="http://www.googledrive.com/host/0ByceWKKkA7-KMVlPX0pxQ2dHZnM" alt="An image of Steven Colbert fist bumping an eagle, because..... it's awesome" style="align: center;" ></img>
+<br>
+</div>
+
+<hr>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<!--Other resources to check out.-->
+<h3>Other online resources you might want to check out:</h3>
+<ul>
+<li><a href="https://drive.google.com/folderview?id=0ByceWKKkA7-KdmswbjZ1MklnQVk&usp=sharing"  target="_blank">Jay's Internet Resources</a> - link to my Google Docs folder on computer science and business resources. (Not for students)</li>
+<li><a href="http://www.htmldog.com/guides/css/" target="_blank">HTML Dog CSS</a> - great reference site for HTML can CSS, similar to W3 Schools in scope.</li>
+<li><a href="http://www.csszengarden.com/" target="_blank">CSS Zen Garden</a> - a site designed to illustrate what CSS can do.  The site consists of many pages with the same HTML but different CSS.</li>
+<li><a href="https://pattle.github.io/simpsons-in-css/" target="_blank">The Simpsons in CSS</a> - another site designed to illustrate what CSS can do.  The creator used CSS to create the Simpsons characters.</li>
+</ul>
+</div>
+</body>
+</html>
